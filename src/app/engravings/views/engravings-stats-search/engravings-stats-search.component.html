@@ -1,0 +1,102 @@
+<main class="content-area">
+    <clr-alert clrAlertType="info" [clrAlertClosable]="true">
+        <clr-alert-item>
+            Search for engravings and stats. The results show which classes use the engravings and stats together.
+        </clr-alert-item>
+    </clr-alert>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Engraving 1</label>
+                <clr-combobox [(ngModel)]="engravingOne" (clrOpenChange)="changeEngravingOne($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of engravingsOptions | keyvalue" [clrValue]="item.key">
+                            {{item.key}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+        <div class="clr-col-1">
+            <clr-select-container>
+                <label>Modifier</label>
+                <select clrSelect [(ngModel)]="engravingModifier" (ngModelChange)="changeEngravingModifier()">
+                    <option value="and">and</option>
+                    <option value="or">or</option>
+                </select>
+            </clr-select-container>
+        </div>
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Engraving 2</label>
+                <clr-combobox [(ngModel)]="engravingTwo" (clrOpenChange)="changeEngravingTwo($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of engravingsOptions | keyvalue" [clrValue]="item.key">
+                            {{item.key}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+    </div>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Stat 1</label>
+                <clr-combobox [(ngModel)]="statOne" (clrOpenChange)="changeStatOne($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of statOptions" [clrValue]="item">
+                            {{item}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+        <div class="clr-col-1">
+            <clr-select-container>
+                <label>Modifier</label>
+                <select clrSelect [(ngModel)]="statModifier" (ngModelChange)="changeStatModifier()">
+                    <option value="and">and</option>
+                    <option value="or">or</option>
+                </select>
+            </clr-select-container>
+        </div>
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Stat 2</label>
+                <clr-combobox [(ngModel)]="statTwo" (clrOpenChange)="changeStatTwo($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of statOptions" [clrValue]="item">
+                            {{item}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+    </div>
+    <br>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <button class="btn btn-primary" (click)="findEngravingsStats()"
+                [disabled]="buttonDisabled()">Search</button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="hasSearched">
+        <h3>{{createHeaderString()}}</h3>
+        <br>
+        <ol style="font-size: 16px;">
+            <li *ngFor="let item of returnData | keyvalue">
+                {{item.key}}
+                <ul>
+                    <li *ngFor="let name of getBuilds(item.key)">
+                        {{name}}
+                    </li>
+                </ul>
+            </li>
+            <li *ngIf="searchDataEmpty()">
+                None
+            </li>
+        </ol>
+    </div>
+</main>

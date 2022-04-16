@@ -1,0 +1,110 @@
+{
+    "Berserker": {
+        "Berserker's Technique": [
+            0, 1
+        ],
+        "Mayhem Berserker": [
+            0, 2
+        ]
+    },
+    "Paladin": {
+        "Support": [
+            1, 2
+        ]
+    },
+    "Gunlancer": {
+        "Lone Knight": [
+            0, 2
+        ],
+        "Combat Readiness": [
+            0, 1
+        ]
+    },
+    "Striker": {
+        "Esoteric Flurry": [
+            0, 1, 2
+        ],
+        "Death Blow": [
+            0, 1
+        ]
+    },
+    "Wardancer": {
+        "Esoteric Skill Enhancement": [
+            1, 2
+        ],
+        "First Intention": [
+            0, 2
+        ]
+    },
+    "Scrapper": {
+        "Taijutsu": [
+            0, 2
+        ],
+        "Shock Training": [
+            0, 1
+        ]
+    },
+    "Soulfist": {
+        "Robust Spirit": [
+            0, 1
+        ],
+        "Energy Overflow": [
+            0, 2
+        ]
+    },
+    "Gunslinger": {
+        "Peacemaker": [
+            0, 1, 2
+        ],
+        "Time To Hunt": [
+            0, 1, 2
+        ]
+    },
+    "Artillerist": {
+        "Firepower Enhancement": [
+            0, 2
+        ]
+    },
+    "Deadeye": {
+        "Enhanced Weapon": [
+            0, 1, 2
+        ],
+        "Pistoleer": [
+            0, 1, 2
+        ]
+    },
+    "Sharpshooter": {
+        "Sharpshooter": [
+            0, 1, 2
+        ]
+    },
+    "Bard": {
+        "Support": [
+            1, 2
+        ]
+    },
+    "Sorceress": {
+        "Igniter": [
+            0, 1, 2
+        ],
+        "Reflux": [
+            0, 2
+        ]
+    },
+    "Shadowhunter": {
+        "Perfect Suppression": [
+            0, 2
+        ],
+        "Demonic Impulse": [
+            0, 1
+        ]
+    },
+    "Deathblade": {
+        "Surge": [
+            0, 1
+        ],
+        "Remaining Energy": [
+            0, 1
+        ]
+    }
+}
