@@ -4,12 +4,14 @@ import { EngravingsSearchComponent } from './views/engravings-search/engravings-
 import { ClarityModule } from '@clr/angular';
 import { FormsModule } from '@angular/forms';
 import { ClarityIcons } from '@clr/icons';
+import { EngravingsStatsSearchComponent } from './views/engravings-stats-search/engravings-stats-search.component';
 
 
 
 @NgModule({
   declarations: [
-    EngravingsSearchComponent
+    EngravingsSearchComponent,
+    EngravingsStatsSearchComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,57 @@
+<main class="content-area">
+    <clr-alert clrAlertType="info" [clrAlertClosable]="true">
+        <clr-alert-item>
+            Search for builds. Will output the engravings and stats associated with the select build.
+        </clr-alert-item>
+    </clr-alert>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Class</label>
+                <clr-combobox [(ngModel)]="classSelection" (clrOpenChange)="clearClassSelection($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of builds | keyvalue" [clrValue]="item.key">
+                            {{item.key}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+        <div class="clr-col-2">
+            <clr-combobox-container *ngIf="!!classSelection">
+                <label>Build</label>
+                <clr-combobox [(ngModel)]="buildSelection" (clrOpenChange)="clearBuildSelection($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of builds[classSelection] | keyvalue"
+                            [clrValue]="item.key">
+                            {{item.key}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+    </div>
+    <br>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <button class="btn btn-primary" (click)="getBuild()"
+                [disabled]="(!(!!classSelection) || !(!!buildSelection))">Search</button>
+        </div>
+    </div>
+    <div *ngIf="hasSearched">
+        <h3>{{classSelection}} : {{buildSelection}}</h3>
+        <br>
+        <ol style="font-size: 16px;">
+            <h4>Engravings</h4>
+            <li *ngFor="let item of buildOutput.Engravings" class="indent">
+                {{item}}
+            </li>
+        </ol>
+        <ol style="font-size: 16px;">
+            <h4>Stats</h4>
+            <li *ngFor="let item of buildOutput.Stats" class="indent">
+                {{item}}
+            </li>
+        </ol>
+    </div>
+</main>
