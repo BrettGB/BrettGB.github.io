@@ -1,0 +1,57 @@
+<main class="content-area">
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Engraving 1</label>
+                <clr-combobox [(ngModel)]="selectionOne" (clrOpenChange)="clearSelectionOne($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of engravingsOptions" [clrValue]="item">
+                            {{item}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+        <div class="clr-col-1">
+            <clr-select-container>
+                <label>Modifier</label>
+                <select clrSelect [(ngModel)]="modifier" (ngModelChange)="changeModifier()">
+                    <option value="and">and</option>
+                    <option value="or">or</option>
+                </select>
+            </clr-select-container>
+        </div>
+        <div class="clr-col-2">
+            <clr-combobox-container>
+                <label>Engraving 2</label>
+                <clr-combobox [(ngModel)]="selectionTwo" (clrOpenChange)="clearSelectionTwo($event)">
+                    <clr-options>
+                        <clr-option *clrOptionItems="let item of engravingsOptions" [clrValue]="item">
+                            {{item}}
+                        </clr-option>
+                    </clr-options>
+                </clr-combobox>
+            </clr-combobox-container>
+        </div>
+    </div>
+    <br>
+    <div class="clr-row">
+        <div class="clr-col-2">
+            <button class="btn btn-primary" (click)="findEngravings()"
+                [disabled]="!(!!selectionOne) || (!(!!selectionOne) && !(!!selectionTwo))">Search</button>
+        </div>
+    </div>
+    <br>
+    <div *ngIf="hasSearched">
+        <h3>{{createHeaderString()}}</h3>
+        <br>
+        <ul style="font-size: 16px;">
+            <li *ngFor="let item of searchData | keyvalue">
+                {{item.key}}
+            </li>
+            <li *ngIf="searchDataEmpty()">
+                None
+            </li>
+        </ul>
+    </div>
+</main>
