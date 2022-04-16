@@ -5,6 +5,7 @@ import { ClarityModule } from '@clr/angular';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
+import { TopnavComponent } from './components/topnav/topnav.component';
 
 
 
@@ -12,7 +13,8 @@ import { HomeComponent } from './views/home/home.component';
   declarations: [
     CoreComponent,
     SidenavComponent,
-    HomeComponent
+    HomeComponent,
+    TopnavComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,443 @@
+{
+    "Berserker": {
+        "Berserker's Technique": {
+            "Engravings": [
+                47,
+                2,
+                3,
+                36,
+                35,
+                23,
+                40
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        },
+        "Mayhem Berserker": {
+            "Engravings": [
+                46,
+                30,
+                9,
+                23,
+                35,
+                2
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        }
+    },
+    "Paladin": {
+        "Support": {
+            "Engravings": [
+                57,
+                3,
+                16,
+                37,
+                20,
+                12,
+                41,
+                56
+            ],
+            "Stats": [
+                1,
+                2
+            ]
+        }
+    },
+    "Gunlancer": {
+        "Lone Knight": {
+            "Engravings": [
+                52,
+                40,
+                28,
+                23,
+                0,
+                32,
+                53,
+                37,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        },
+        "Combat Readiness": {
+            "Engravings": [
+                53,
+                4,
+                38,
+                21,
+                37,
+                0,
+                3,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        }
+    },
+    "Striker": {
+        "Esoteric Flurry": {
+            "Engravings": [
+                68,
+                2,
+                23,
+                0,
+                37,
+                9,
+                27,
+                19
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        },
+        "Death Blow": {
+            "Engravings": [
+                69,
+                2,
+                23,
+                37,
+                0,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        }
+    },
+    "Wardancer": {
+        "Esoteric Skill Enhancement": {
+            "Engravings": [
+                71,
+                35,
+                23,
+                0,
+                2,
+                24,
+                19,
+                9,
+                27
+            ],
+            "Stats": [
+                1,
+                2
+            ]
+        },
+        "First Intention": {
+            "Engravings": [
+                70,
+                35,
+                23,
+                2,
+                24,
+                19,
+                9,
+                27
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        }
+    },
+    "Scrapper": {
+        "Taijutsu": {
+            "Engravings": [
+                58,
+                0,
+                2,
+                19,
+                9,
+                23
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        },
+        "Shock Training": {
+            "Engravings": [
+                59,
+                0,
+                2,
+                37,
+                19,
+                9,
+                23
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        }
+    },
+    "Soulfist": {
+        "Robust Spirit": {
+            "Engravings": [
+                66,
+                32,
+                0,
+                2,
+                3,
+                19,
+                9,
+                27
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        },
+        "Energy Overflow": {
+            "Engravings": [
+                67,
+                0,
+                35,
+                32,
+                23,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        }
+    },
+    "Gunslinger": {
+        "Peacemaker": {
+            "Engravings": [
+                55,
+                21,
+                0,
+                23,
+                35,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        },
+        "Time To Hunt": {
+            "Engravings": [
+                54,
+                55,
+                23,
+                21,
+                0,
+                9,
+                19
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        }
+    },
+    "Artillerist": {
+        "Firepower Enhancement": {
+            "Engravings": [
+                42,
+                21,
+                23,
+                0,
+                4,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        }
+    },
+    "Deadeye": {
+        "Enhanced Weapon": {
+            "Engravings": [
+                49,
+                2,
+                0,
+                37,
+                23,
+                35,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        },
+        "Pistoleer": {
+            "Engravings": [
+                48,
+                0,
+                32,
+                23,
+                35,
+                2,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        }
+    },
+    "Sharpshooter": {
+        "Sharpshooter": {
+            "Engravings": [
+                63,
+                62,
+                21,
+                23,
+                35,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        }
+    },
+    "Bard": {
+        "Support": {
+            "Engravings": [
+                45,
+                3,
+                16,
+                37,
+                20,
+                22
+            ],
+            "Stats": [
+                1,
+                2
+            ]
+        }
+    },
+    "Sorceress": {
+        "Igniter": {
+            "Engravings": [
+                65,
+                1,
+                21,
+                32,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1,
+                2
+            ]
+        },
+        "Reflux": {
+            "Engravings": [
+                64,
+                32,
+                21,
+                0,
+                1,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        }
+    },
+    "Shadowhunter": {
+        "Perfect Suppression": {
+            "Engravings": [
+                60,
+                2,
+                23,
+                0,
+                37,
+                35,
+                32,
+                9,
+                19,
+                27
+            ],
+            "Stats": [
+                0,
+                2
+            ]
+        },
+        "Demonic Impulse": {
+            "Engravings": [
+                61,
+                0,
+                21,
+                23,
+                37,
+                35,
+                9,
+                19
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        }
+    },
+    "Deathblade": {
+        "Surge": {
+            "Engravings": [
+                50,
+                2,
+                0,
+                72,
+                40,
+                23,
+                9,
+                19
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        },
+        "Remaining Energy": {
+            "Engravings": [
+                51,
+                40,
+                2,
+                0,
+                23,
+                19,
+                9
+            ],
+            "Stats": [
+                0,
+                1
+            ]
+        }
+    }
+}
